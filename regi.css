@@ -1,0 +1,211 @@
+:root {
+    --red: #e60000;
+    --text: #222222;
+    --border: #a9a9a9;
+    --panel: #ebebeb;
+    --focus: #4a90d9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 12px 16px 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: var(--text);
+    background: var(--panel);
+}
+
+.note,
+.steps {
+    margin: 0 0 10px;
+    font-size: 11px;
+}
+
+.req {
+    color: var(--red);
+}
+
+h3 {
+    margin: 18px 0 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: var(--red);
+}
+
+form {
+    font-size: 11px;
+    line-height: 20px;
+}
+
+label.field {
+    display: inline-block;
+    width: 190px;
+    margin: 0 4px 4px 0;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+
+.hint {
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 190px;
+    height: 20px;
+    margin: 0 0 4px;
+    padding: 2px 4px;
+    font-family: inherit;
+    font-size: 11px;
+    color: var(--text);
+    background: #fff;
+    border: 1px solid var(--border);
+    vertical-align: top;
+}
+
+select.wide {
+    width: 235px;
+}
+
+input.wide {
+    width: 250px;
+}
+
+input.small {
+    width: 42px;
+    margin-right: 4px;
+}
+
+textarea {
+    width: 250px;
+    height: 58px;
+    margin: 0 0 4px;
+    padding: 3px 4px;
+    font-family: inherit;
+    font-size: 11px;
+    color: var(--text);
+    background: #fff;
+    border: 1px solid var(--border);
+    vertical-align: top;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--focus);
+    box-shadow: 0 0 3px var(--focus);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    margin: 3px 4px 0 0;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+label.choice,
+span.choice {
+    display: inline-block;
+    margin: 0 10px 4px 0;
+    font-size: 11px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+label.choice {
+    cursor: pointer;
+}
+
+input.indent,
+label.indent {
+    margin-left: 198px;
+}
+
+p.text {
+    margin: 0 0 4px;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+p.muted {
+    margin-top: 8px;
+    color: #666;
+}
+
+hr {
+    height: 6px;
+    margin: 12px 0;
+    background: #fff;
+    border: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    height: 20px;
+    margin-right: 4px;
+    padding: 1px 12px;
+    font-family: inherit;
+    font-size: 11px;
+    color: var(--text);
+    background: #f7f7f7;
+    border: 1px solid #888;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #dcdcdc;
+}
+
+.footer {
+    margin: 12px 0 0;
+    font-size: 11px;
+}
+
+.footer a {
+    color: #888;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+    }
+
+    label.field {
+        display: block;
+        width: auto;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    input.indent,
+    label.indent {
+        margin-left: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        max-width: 100%;
+    }
+}
